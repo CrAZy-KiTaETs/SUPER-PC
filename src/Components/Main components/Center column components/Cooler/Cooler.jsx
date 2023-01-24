@@ -18,7 +18,7 @@ function Cooler({ coolerData }) {
   ];
 
   useEffect(() => {
-    value === "none" ? coolerData({ name: "", cost: 0 }) : null;
+    if (value === "none") coolerData({ name: "", cost: 0 });
     value === "rgb" ? setRgb(true) : setRgb(false);
     value === "non_rgb" ? setNon_rgb(true) : setNon_rgb(false);
   }, [value]);

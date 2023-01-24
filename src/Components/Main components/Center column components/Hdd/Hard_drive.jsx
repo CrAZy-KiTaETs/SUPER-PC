@@ -17,7 +17,7 @@ function Hard_drive({ hardData }) {
   ];
 
   useEffect(() => {
-    value === "none" ? hardData({ name: "", cost: 0 }) : null;
+    if (value === "none") hardData({ name: "", cost: 0 });
     value === "Hard_models" ? setHard_models(true) : setHard_models(false);
   }, [value]);
 

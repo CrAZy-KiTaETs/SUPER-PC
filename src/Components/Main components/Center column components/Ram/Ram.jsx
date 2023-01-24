@@ -15,7 +15,7 @@ function Ram({ ramData }) {
   ];
 
   useEffect(() => {
-    value === "none" ? ramData({ name: "", cost: 0 }) : null;
+    if (value === "none") ramData({ name: "", cost: 0 });
     value === "ddr4" ? setDdr4(true) : setDdr4(false);
   }, [value]);
 

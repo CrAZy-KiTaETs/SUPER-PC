@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/Super-PC/static/css/main.6de20258.css",
+    "main.js": "/Super-PC/static/js/main.18e82b61.js",
+    "static/js/787.670764a7.chunk.js": "/Super-PC/static/js/787.670764a7.chunk.js",
+    "static/media/full-background.jpg": "/Super-PC/static/media/full-background.1098180c6d686da48df3.jpg",
+    "static/media/wallpaper.jpg": "/Super-PC/static/media/wallpaper.63566acea294ae951106.jpg",
+    "static/media/Background3.jpg": "/Super-PC/static/media/Background3.7237611f498318663791.jpg",
+    "static/media/3step-2.png": "/Super-PC/static/media/3step-2.30b1debb3a2114f964b6.png",
+    "static/media/2step.png": "/Super-PC/static/media/2step.0e0777c50c1add94dfb2.png",
+    "static/media/1step.png": "/Super-PC/static/media/1step.a606131c94a6a7ffc256.png",
+    "static/media/5step.png": "/Super-PC/static/media/5step.aef21d08074b60e35831.png",
+    "static/media/4step.png": "/Super-PC/static/media/4step.5efb29cc826c4c3d3ef6.png",
+    "static/media/configurator-mask.svg": "/Super-PC/static/media/configurator-mask.183fe3963caadfc4a0a77f6074094b67.svg",
+    "index.html": "/Super-PC/index.html",
+    "main.6de20258.css.map": "/Super-PC/static/css/main.6de20258.css.map",
+    "main.18e82b61.js.map": "/Super-PC/static/js/main.18e82b61.js.map",
+    "787.670764a7.chunk.js.map": "/Super-PC/static/js/787.670764a7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6de20258.css",
+    "static/js/main.18e82b61.js"
+  ]
+}

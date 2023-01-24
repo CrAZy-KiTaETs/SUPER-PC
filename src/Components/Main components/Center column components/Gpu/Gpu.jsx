@@ -18,7 +18,7 @@ function Gpu({ gpuData }) {
   ];
 
   useEffect(() => {
-    value === "none" ? gpuData({ name: "", cost: 0 }) : null;
+    if (value === "none") gpuData({ name: "", cost: 0 });
     value === "nvidia" ? setNvidia(true) : setNvidia(false);
     value === "amd" ? setAmd(true) : setAmd(false);
   }, [value]);

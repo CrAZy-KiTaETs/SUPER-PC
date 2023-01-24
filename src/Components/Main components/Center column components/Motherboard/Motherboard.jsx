@@ -21,7 +21,7 @@ function Motherboard({ motherData }) {
   const [msi, setMsi] = useState(false);
 
   useEffect(() => {
-    value === "none" ? motherData({ name: "", cost: 0 }) : null;
+    if (value === "none") motherData({ name: "", cost: 0 });
     value === "asus" ? setAsus(true) : setAsus(false);
     value === "gigabyte" ? setGigabyte(true) : setGigabyte(false);
     value === "msi" ? setMsi(true) : setMsi(false);

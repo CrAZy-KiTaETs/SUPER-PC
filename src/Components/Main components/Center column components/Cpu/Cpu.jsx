@@ -25,7 +25,7 @@ function Cpu({ cpuData }) {
   ];
 
   useEffect(() => {
-    value === "none" ? cpuData({ name: "", cost: 0 }) : null;
+    if (value === "none") cpuData({ name: "", cost: 0 });
     value === "i3" ? setI3(true) : setI3(false);
     value === "i5" ? setI5(true) : setI5(false);
     value === "i7" ? setI7(true) : setI7(false);

@@ -14,7 +14,7 @@ function Cpu_cooler({ cooler_models }) {
   ];
 
   useEffect(() => {
-    value === "none" ? cooler_models({ name: "", cost: 0 }) : null;
+    if (value === "none") cooler_models({ name: "", cost: 0 });
     value === "air_cooling" ? setAir(true) : setAir(false);
   }, [value]);
 

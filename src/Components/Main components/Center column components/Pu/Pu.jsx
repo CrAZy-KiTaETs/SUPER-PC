@@ -12,12 +12,13 @@ function Pu({ puData }) {
   const [hw, setHw] = useState(false);
 
   const options = [
-    { value: "", label: "Не выбрано" },
+    { value: "none", label: "Не выбрано" },
     { value: "mw", label: "До 1000W" },
     { value: "hw", label: "1000W+" },
   ];
 
   useEffect(() => {
+    if (value === "none") puData({ name: "", cost: 0 });
     value === "mw" ? setMw(true) : setMw(false);
     value === "hw" ? setHw(true) : setHw(false);
   }, [value]);

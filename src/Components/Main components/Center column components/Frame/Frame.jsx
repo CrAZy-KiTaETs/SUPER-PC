@@ -27,7 +27,7 @@ function Frame({ frameData }) {
   ];
 
   useEffect(() => {
-    value === "none" ? frameData({ name: "", cost: 0 }) : null;
+    if (value === "none") frameData({ name: "", cost: 0 });
     value === "deepcool" ? setDeepcool(true) : setDeepcool(false);
     value === "corsair" ? setCorsair(true) : setCorsair(false);
     value === "aerocool" ? setAerocool(true) : setAerocool(false);
