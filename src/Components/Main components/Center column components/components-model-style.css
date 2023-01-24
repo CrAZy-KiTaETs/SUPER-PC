@@ -1,0 +1,121 @@
+.ram {
+  transform: rotate(-135deg);
+}
+
+.gpu {
+  transform: rotate(45deg);
+  /* color: rgb(127, 164, 233); */
+}
+
+.models {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  /* color: rgb(195, 206, 225); */
+  color: rgb(160, 160, 160);
+}
+
+.lable_inp {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+#react-select-3-placeholder {
+  color: rgb(160, 160, 160);
+}
+
+#react-select-5-placeholder {
+  color: rgb(160, 160, 160);
+}
+
+#react-select-7-placeholder {
+  color: rgb(160, 160, 160);
+}
+#react-select-9-placeholder {
+  color: rgb(160, 160, 160);
+}
+#react-select-11-placeholder {
+  color: rgb(160, 160, 160);
+}
+#react-select-13-placeholder {
+  color: rgb(160, 160, 160);
+}
+#react-select-15-placeholder {
+  color: rgb(160, 160, 160);
+}
+#react-select-17-placeholder {
+  color: rgb(160, 160, 160);
+}
+#react-select-19-placeholder {
+  color: rgb(160, 160, 160);
+}
+
+.first_label {
+  font-size: 20px;
+  cursor: pointer;
+  margin-left: 25px;
+  border: 1px dashed #606060;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  z-index: 0;
+}
+
+.span_price {
+  font-size: 14px;
+}
+
+.first_label:before {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #606060;
+  border-radius: 50%;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  z-index: 1;
+}
+
+.first_label:after {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 12px;
+  background-color: dodgerblue;
+  border-radius: 50%;
+  position: absolute;
+  top: 34px;
+  left: 4px;
+  z-index: 2;
+  opacity: 0;
+}
+
+.lable_inp:checked + .first_label:before {
+  border: 2px solid dodgerblue;
+}
+
+.lable_inp:checked + .first_label:after {
+  opacity: 1;
+}
+.lable_inp:checked + .first_label {
+  color: dodgerblue;
+}
+
+.span_cost {
+  font-size: 14px;
+}
+
+@media (max-width: 530px) {
+  .first_label:before {
+    width: 13px;
+    height: 13px;
+  }
+  .first_label:after {
+    width: 9px;
+    height: 9px;
+  }
+}

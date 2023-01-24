@@ -1,0 +1,174 @@
+.assembly_steps {
+  max-width: 1500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#gridDiv {
+  max-width: 1500px;
+  height: 650px;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0 10px;
+  gap: 1px;
+}
+
+.assembly_diagram {
+  background-color: rgb(28, 32, 36);
+  padding: 20px;
+  position: relative;
+  /* border: 1px solid white; */
+}
+
+.our_clients {
+  font-size: 36px;
+  text-align: center;
+  z-index: -1;
+  position: relative;
+}
+
+h2 {
+  color: white;
+  position: relative;
+  z-index: 2;
+}
+
+p {
+  color: #1265ac;
+  /* color: #626570; */
+  z-index: 2;
+  position: relative;
+}
+
+#e {
+  grid-row: span 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.steps_img {
+  position: absolute;
+  width: 160px;
+  bottom: 10px;
+  right: 10px;
+  z-index: 1;
+}
+
+#step3 {
+  max-width: 140px;
+}
+
+#step4 {
+  bottom: -30px;
+  max-width: 220px;
+}
+
+#step5 {
+  width: 400px;
+  position: static;
+  margin: 0 auto;
+}
+
+#sertificat_info {
+  max-width: 1000px;
+  /* background-color: rgb(28, 32, 36);  */
+  margin: 0 auto;
+}
+
+#sertificat_info h2 {
+  text-align: center;
+  font-size: 46px;
+}
+
+#sertificat_info p {
+  font-size: 20px;
+  color: #626570;
+  padding: 10px;
+}
+
+#sertificat_info span {
+  color: #1265ac;
+}
+
+#ll {
+  width: 100%;
+}
+
+#ll p {
+  max-width: 1000px;
+  margin: 0;
+  font-size: 20px;
+}
+
+#ll h2 {
+  max-width: 1000px;
+  margin: 0 0 20px 0;
+}
+
+@media (max-width: 1024px) {
+  #gridDiv {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 200px;
+  }
+  .steps_img {
+    max-width: 150px;
+  }
+  #e {
+    order: 1;
+  }
+  #step5 {
+    position: absolute;
+    right: 10px;
+  }
+}
+
+@media (max-width: 850px) {
+  #gridDiv {
+    margin-bottom: 280px;
+  }
+}
+
+@media (max-width: 570px) {
+  #gridDiv {
+    margin-bottom: 350px;
+  }
+}
+
+@media (max-width: 530px) {
+  #gridDiv {
+    height: auto;
+    margin: 10px;
+  }
+  .our_clients {
+    font-size: 28px;
+  }
+  .assembly_diagram h2 {
+    font-size: 20px;
+  }
+  .assembly_diagram p {
+    font-size: 14px;
+  }
+  .steps_img {
+    width: 120px;
+  }
+  #step5 {
+    width: 120px;
+  }
+  #sertificat_info h2 {
+    font-size: 36px;
+  }
+  #sertificat_info p {
+    font-size: 14px;
+  }
+}
+
+/* @media (max-width: 480px) {
+  #gridDiv {
+    margin-bottom: 600px;
+  }
+} */

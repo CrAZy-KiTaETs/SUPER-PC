@@ -1,0 +1,70 @@
+.Custom-select {
+  &__control {
+    width: 300px !important;
+    font-size: 18px !important;
+    font-weight: 500 !important;
+    background: inherit !important;
+    box-shadow: none !important;
+    border-color: #505050 !important;
+    transition: 0.3s !important;
+    cursor: pointer !important;
+  }
+  @media (max-width: 1150px) {
+    &__control {
+      width: 200px !important;
+      font-size: 14px !important;
+    }
+  }
+  @media (max-width: 1024px) {
+    &__control {
+      width: 350px !important;
+      font-size: 14px !important;
+    }
+  }
+  @media (max-width: 650px) {
+    &__control {
+      width: 200px !important;
+      font-size: 14px !important;
+    }
+  }
+  @media (max-width: 530px) {
+    &__control {
+      width: 100% !important;
+      font-size: 14px !important;
+    }
+  }
+  &__control:hover {
+    border-color: dodgerblue !important;
+  }
+  &__menu-list {
+    border: 1px solid #606060 !important;
+    font-size: 18px !important;
+    font-weight: 500 !important;
+    background-color: #282828 !important;
+    color: rgb(160, 160, 160) !important;
+    padding: 0 !important;
+    z-index: 10 !important;
+    position: relative;
+  }
+
+  &__dropdown-indicator {
+    color: dodgerblue !important;
+  }
+  &__indicator-separator {
+    background-color: dodgerblue !important;
+  }
+  &__single-value {
+    color: dodgerblue !important;
+  }
+  &__option {
+    cursor: pointer !important;
+    &--is-focused {
+      color: white !important;
+      background-color: #353535 !important;
+    }
+    &--is-selected {
+      color: dodgerblue !important;
+      background-color: inherit !important;
+    }
+  }
+}
